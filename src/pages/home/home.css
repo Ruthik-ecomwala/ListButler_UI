@@ -1,0 +1,252 @@
+.home-container{
+    /* background-image: url('../../assets/bg-gray.jpg'); */
+    /* background-image: url('../../assets/bg-gray-2.jpg'); */
+
+    font-family: "Rubik", sans-serif;
+    background-size:cover ;
+    /* max-width: 90vw; */
+    /* margin: auto; */
+}
+.robo-home{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    animation: hu__hu__ infinite 4s ease-in-out
+}
+.robo-left{
+    top: 20%;
+    left: 6%;
+}
+.robo-right{
+    top: 75%;
+    right: 6%;
+}
+.robo-home img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes hu__hu__ {
+    /* 50% { transform: translateY(30px) } */
+    50% { transform: translateX(30px) }
+}
+
+.hero-main-home{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    gap: 30px;
+    /* background-image: url('../../assets/bg-gray-3.png'); */
+}
+.hero-main-home h1{
+    font-family: "Rubik", sans-serif;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: poppins; */
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+    /* text-shadow: 2px 2px #ddd; */
+    line-height: 4.8rem;
+}
+.hero-main-home p{
+    font-size: 2rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 500;
+    /* font-family: "Roboto Mono", monospace; */
+    font-family: "Rubik", sans-serif;
+}
+.video-container-home{
+    max-width: 65vw;
+    margin: auto;
+}
+
+.hero-home-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-home-left{
+    flex: 1;
+    padding: 30px;
+}
+
+.hero-home-right{
+    flex: 1;
+    padding: 30px;
+}
+.hero-section-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.hero-section-text{
+    font-size: 1.5rem;
+    color: #333;
+    /* font-family: "Roboto Mono", monospace; */
+}
+.hero-img{
+    width: 500px;
+    
+}
+.service3-img{
+    height: 400px;
+}
+
+.hero-border-line{
+    width: 5px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.trustedBy-container-home{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 50px;
+
+
+}
+
+.trustedBy-container-home h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.trustedBy-container-home P{
+    text-align: center;
+    letter-spacing: 1.2px;
+}
+
+.book-a-call{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    margin: 10px auto;
+    color: #000;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    transition: 0.3s linear;
+}
+.book-a-call:hover{
+    cursor: pointer;
+    transform: translateX(10px);
+}
+.book-a-call img{
+    width: 60px;
+}
+.book-a-call span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
+.trustedBy-people{
+    height: 350px;
+
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    border-color: #4b5563;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .carousel-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: #eee;
+    transition: 0.2s linear;
+
+  }
+  
+  .carousel-card:hover {
+    transform: scale(0.95);
+    box-shadow: 3px 3px 6px #eee;
+  }
+  
+  .carousel-card > img {
+    height: 90%;
+    width: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .carousel-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 200%;
+    height: 100%;
+    animation: slide 20s linear infinite;
+    padding: 10px;
+  }
+
+.carousel-track:hover {
+
+   animation-play-state: paused;
+}
+
+
+.carousel-container::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, black);
+    content: "";
+    z-index: 10;
+}
+
+.carousel-container::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to left, transparent, #000);
+    content: "";
+    z-index: 10;
+}
+
+
+
+  
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+
+
+  .testimonial-home-container{
+    background-color: #333;
+    padding: 50px 0;
+  }

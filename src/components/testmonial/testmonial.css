@@ -1,0 +1,42 @@
+.testmonial-container{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px 4px white; */
+}
+.testmonial-container{
+    display: flex;
+    align-items: center;
+}
+.testmonial-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.testmonial-text{
+    font-family:cursive;
+    margin-bottom: 20px;
+}
+.testmonials-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.testimonial-brand-logo{
+    width: 180px;
+}
+.testmonial-name{
+    font-size: 1.6rem;
+    font-family: "Grey Qo", cursive;
+}
+.testimonial-brand-name{
+    font-size: 1.2rem;
+}
